@@ -1,0 +1,23 @@
+{
+  "name": "Fast-racing",
+  "version": "1.2.4",
+  "description": "Onchain racing manager leveraging Chainlink VRF v2.5, Chainlink Functions, and Chainlink Automation.",
+  "license": "BSL-1.1",
+  "author": "ianlapham",
+  "main": "handler.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "serverless",
+    "express",
+    "viem"
+  ],
+  "dependencies": {
+    "body-parser": "2.2.0",
+    "express": "5.1.0",
+    "express-validator": "7.2.1",
+    "serverless-http": "3.2.0",
+    "viem": "2.28.3"
+  }
+}

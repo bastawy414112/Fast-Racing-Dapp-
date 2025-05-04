@@ -1,0 +1,18 @@
+.menuItems {
+  text-decoration: none !important;
+  color: var(--primary-color);
+  font-weight: 800;
+  font-size: large;
+}
+
+@media (width < 950px) {
+  .menuItems {
+    font-size: 1em;
+  }
+}
+
+@media (width < 750px) {
+  .menuItems {
+    font-size: 0.8em;
+  }
+}
