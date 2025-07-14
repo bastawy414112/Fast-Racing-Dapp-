@@ -1,5 +1,3 @@
-org: pedrojok
-app: backend
 service: backend
 frameworkVersion: "3"
 
@@ -8,6 +6,9 @@ provider:
   runtime: nodejs20.x
   stage: dev
   region: us-east-1
+
+  environment:
+    WEATHER_API_KEY: "e47e006380294dc2a4a71414251007"
 
 functions:
   app:

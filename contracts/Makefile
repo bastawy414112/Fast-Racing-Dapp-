@@ -35,4 +35,10 @@ simulate :; forge script script/DeployerTestnet.s.sol --rpc-url avalancheFuji
 
 catapulta :; npx catapulta script script/Deployer.s.sol --network avalanche --skip-git
 
-catapulTest :; npx catapulta script script/DeployerTestnet.s.sol --network avalancheFuji --skip-git
+catapulTest :; npx catapulta script script/DeployerTestnet.s.sol --network avalancheFuji --skip-git 
+
+updateForwarder :; \
+	cast send 0x1B97BCE64A6e87a6fa3e06C766634d9999d89a60 "updateForwarder(address)" \
+	0xF9FD46767B979A8865A528316A6ff7BBD4b3b49b \
+	--private-key $(PRIVATE_KEY) \
+	--rpc-url $(AVALANCHE_RPC_URL)
